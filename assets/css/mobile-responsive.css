@@ -1,0 +1,203 @@
+/* Additional Mobile Responsive Styles */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Hero Section */
+  .hero .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-profile-image {
+    margin-bottom: 20px !important;
+    order: -1;
+  }
+  
+  .hero-profile-image img {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem !important;
+    margin-top: 15px !important;
+  }
+  
+  .hero p {
+    font-size: 0.95rem !important;
+  }
+  
+  .hero .student-status {
+    font-size: 0.9rem !important;
+    padding: 0 10px;
+  }
+  
+  /* Social Links */
+  .social-links a {
+    font-size: 1.2rem !important;
+    margin: 0 8px !important;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    margin-bottom: 30px;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .profile-card .role {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Buttons */
+  .btn-primary, .btn-secondary {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+  
+  /* Section Titles */
+  .section-title h2 {
+    font-size: 2rem !important;
+  }
+  
+  .section-title p {
+    font-size: 0.95rem !important;
+  }
+  
+  /* Skills Progress Bars */
+  .skill-name {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Service Items */
+  .service-item {
+    margin-bottom: 20px;
+  }
+  
+  .service-item h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  .service-item p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Contact Info */
+  .info-item h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .info-item p {
+    font-size: 0.95rem !important;
+  }
+  
+  /* Footer */
+  .footer p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Navigation */
+  .btn-getstarted {
+    padding: 8px 20px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Experience and Education Cards */
+  .exp-card h3,
+  .timeline-content h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  .exp-card p,
+  .timeline-content p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Detail Grid Items */
+  .detail-item {
+    padding: 15px !important;
+  }
+  
+  .detail-item strong {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-profile-image {
+    margin-bottom: 25px !important;
+  }
+  
+  .hero-profile-image img {
+    width: 170px !important;
+    height: 170px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hero h2 {
+    font-size: 2rem !important;
+    margin-top: 15px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-profile-image {
+    margin-bottom: 25px !important;
+  }
+  
+  .hero-profile-image img {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* Touch-friendly buttons on mobile */
+@media (max-width: 767.98px) {
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    padding: 10px;
+  }
+}
+
+/* Optimize form inputs for mobile */
+@media (max-width: 575.98px) {
+  .php-email-form input,
+  .php-email-form textarea {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
