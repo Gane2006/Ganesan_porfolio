@@ -12,10 +12,31 @@
   max-width: 100%;
 }
 
-/* Remove any conflicting styles */
-.hero-profile-image {
-  order: -1;
-  margin-bottom: 20px;
+/* Hero image responsive sizing */
+.hero img {
+  width: 144px !important;
+  height: 144px !important;
+}
+
+@media (min-width: 576px) {
+  .hero img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero img {
+    width: 192px !important;
+    height: 192px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero img {
+    width: 208px !important;
+    height: 208px !important;
+  }
 }
 
 /* Extra small devices (phones, less than 576px) */
