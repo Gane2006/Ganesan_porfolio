@@ -1,36 +1,86 @@
-/* Hero Section Responsive Styles */
+/* Hero Section Responsive Styles - Mobile First */
 
-/* Base image size */
-#hero-profile-image {
-  width: 150px !important;
-  height: 150px !important;
+/* Remove any absolute positioning or transforms that cause overlap */
+#hero * {
+  position: relative !important;
 }
 
-/* Small devices */
-@media (min-width: 576px) {
-  #hero-profile-image {
-    width: 170px !important;
-    height: 170px !important;
+#hero img {
+  position: relative !important;
+  transform: none !important;
+}
+
+/* Base mobile size */
+#hero-profile-image {
+  width: 140px !important;
+  height: 140px !important;
+  margin-bottom: 32px !important;
+}
+
+/* Ensure proper stacking on mobile */
+@media (max-width: 767.98px) {
+  #hero .flex {
+    flex-direction: column !important;
   }
   
   #hero h2 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+  
+  #hero p {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+  
+  .student-status {
+    font-size: 0.9rem !important;
+    text-align: center !important;
+  }
+  
+  .social-links {
+    justify-content: center !important;
   }
 }
 
-/* Medium devices */
+/* Small devices and above */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hero-profile-image {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  
+  #hero h2 {
+    font-size: 2.25rem !important;
+  }
+}
+
+/* Medium devices - Desktop layout starts */
 @media (min-width: 768px) {
   #hero-profile-image {
     width: 200px !important;
     height: 200px !important;
+    margin-bottom: 0 !important;
   }
   
   #hero h2 {
     font-size: 3rem !important;
+    text-align: left !important;
   }
   
   #hero p {
     font-size: 1.5rem !important;
+    text-align: left !important;
+  }
+  
+  .student-status {
+    text-align: left !important;
+  }
+  
+  .social-links {
+    justify-content: flex-start !important;
   }
 }
 
@@ -44,29 +94,9 @@
   #hero h2 {
     font-size: 3.5rem !important;
   }
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 575.98px) {
-  #hero h2 {
-    font-size: 2rem !important;
-  }
   
   #hero p {
-    font-size: 1.1rem !important;
-  }
-  
-  .student-status {
-    font-size: 0.9rem !important;
-  }
-  
-  .social-links a {
-    width: 45px !important;
-    height: 45px !important;
-  }
-  
-  .social-links i {
-    font-size: 20px !important;
+    font-size: 1.75rem !important;
   }
 }
   

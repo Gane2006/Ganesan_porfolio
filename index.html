@@ -75,61 +75,129 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 80px 20px;">
+    <section id="hero" class="hero section dark-background" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 60px 20px;">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100" style="text-align: center; max-width: 900px;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto;">
         
-        <!-- Profile Image -->
-        <div style="margin-bottom: 40px;" data-aos="zoom-in" data-aos-delay="200">
-          <img 
-            src="assets/img/person/IMG_35631120212479.jpg" 
-            alt="GANESAN K Profile Photo"
-            id="hero-profile-image"
-            style="
-              width: 180px !important;
-              height: 180px !important;
-              border-radius: 50% !important;
-              object-fit: cover !important;
-              object-position: center !important;
-              border: 5px solid #ff4d4f !important;
-              box-shadow: 0 15px 40px rgba(255, 77, 79, 0.4) !important;
-              display: block !important;
-              margin: 0 auto !important;
-              background: #1a1a1a;
-            "
-            onerror="console.error('Image failed to load:', this.src);">
-        </div>
-
-        <!-- Text Content -->
-        <div style="margin-top: 30px;">
-          <h2 style="font-size: 3rem; font-weight: 700; color: #ffffff; margin-bottom: 20px; line-height: 1.2;">
-            Hi, I'm GANESAN K
-          </h2>
+        <!-- Flex Container -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12" data-aos="fade-up" data-aos-delay="100">
           
-          <p style="font-size: 1.5rem; color: #d9d9d9; margin-bottom: 20px;">
-            I'm a <span class="typed" data-typed-items="CSE Student, Web Developer, Full-Stack Developer, AI Enthusiast"></span><span class="typed-cursor" aria-hidden="true"></span>
-          </p>
-          
-          <p class="student-status" style="font-size: 1rem; color: #ff4d4f; margin-bottom: 30px; padding: 0 20px;">
-            🎓 B.Tech CSE Student | Actively Seeking Internship & Job Opportunities
-          </p>
-          
-          <!-- Social Links -->
-          <div class="social-links" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" 
-               target="_blank" 
-               style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255, 77, 79, 0.1); color: #ff4d4f; text-decoration: none; transition: all 0.3s ease;">
-              <i class="bi bi-linkedin" style="font-size: 24px;"></i>
-            </a>
-            <a href="mailto:ganesanparkavi777@gmail.com" 
-               style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255, 77, 79, 0.1); color: #ff4d4f; text-decoration: none; transition: all 0.3s ease;">
-              <i class="bi bi-envelope" style="font-size: 24px;"></i>
-            </a>
-            <a href="tel:+919787069411" 
-               style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255, 77, 79, 0.1); color: #ff4d4f; text-decoration: none; transition: all 0.3s ease;">
-              <i class="bi bi-phone" style="font-size: 24px;"></i>
-            </a>
+          <!-- Profile Image Container -->
+          <div class="relative mb-8 md:mb-0 mx-auto flex-shrink-0" data-aos="zoom-in" data-aos-delay="200" style="order: -1;">
+            <img 
+              src="assets/img/person/IMG_35631120212479.jpg" 
+              alt="GANESAN K Profile Photo"
+              id="hero-profile-image"
+              class="flex-shrink-0"
+              style="
+                width: 140px !important;
+                height: 140px !important;
+                border-radius: 50% !important;
+                object-fit: cover !important;
+                object-position: center !important;
+                border: 5px solid #ff4d4f !important;
+                box-shadow: 0 15px 40px rgba(255, 77, 79, 0.4) !important;
+                display: block !important;
+                margin: 0 auto !important;
+                position: relative !important;
+                z-index: 1 !important;
+              ">
           </div>
+
+          <!-- Text Content Container -->
+          <div class="text-center md:text-left w-full mt-0" style="position: relative; z-index: 2;">
+            
+            <h2 style="
+              font-size: 2rem; 
+              font-weight: 700; 
+              color: #ffffff; 
+              margin-bottom: 16px; 
+              margin-top: 0;
+              line-height: 1.2;
+            " class="md:text-5xl">
+              Hi, I'm GANESAN K
+            </h2>
+            
+            <p style="
+              font-size: 1.1rem; 
+              color: #d9d9d9; 
+              margin-bottom: 16px;
+              margin-top: 0;
+            " class="md:text-2xl">
+              I'm a <span class="typed" data-typed-items="CSE Student, Web Developer, Full-Stack Developer, AI Enthusiast"></span><span class="typed-cursor" aria-hidden="true"></span>
+            </p>
+            
+            <p class="student-status" style="
+              font-size: 0.9rem; 
+              color: #ff4d4f; 
+              margin-bottom: 24px;
+              margin-top: 0;
+              padding: 0 10px;
+            " class="md:text-base md:px-0">
+              🎓 B.Tech CSE Student | Actively Seeking Internship & Job Opportunities
+            </p>
+            
+            <!-- Social Links -->
+            <div class="social-links flex justify-center md:justify-start gap-4 flex-wrap" style="margin-top: 24px;">
+              <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" 
+                 target="_blank" 
+                 style="
+                   width: 48px; 
+                   height: 48px; 
+                   display: flex; 
+                   align-items: center; 
+                   justify-content: center; 
+                   border-radius: 50%; 
+                   background: rgba(255, 77, 79, 0.1); 
+                   color: #ff4d4f; 
+                   text-decoration: none; 
+                   transition: all 0.3s ease;
+                   position: relative;
+                 "
+                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-linkedin" style="font-size: 22px;"></i>
+              </a>
+              <a href="mailto:ganesanparkavi777@gmail.com" 
+                 style="
+                   width: 48px; 
+                   height: 48px; 
+                   display: flex; 
+                   align-items: center; 
+                   justify-content: center; 
+                   border-radius: 50%; 
+                   background: rgba(255, 77, 79, 0.1); 
+                   color: #ff4d4f; 
+                   text-decoration: none; 
+                   transition: all 0.3s ease;
+                   position: relative;
+                 "
+                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-envelope" style="font-size: 22px;"></i>
+              </a>
+              <a href="tel:+919787069411" 
+                 style="
+                   width: 48px; 
+                   height: 48px; 
+                   display: flex; 
+                   align-items: center; 
+                   justify-content: center; 
+                   border-radius: 50%; 
+                   background: rgba(255, 77, 79, 0.1); 
+                   color: #ff4d4f; 
+                   text-decoration: none; 
+                   transition: all 0.3s ease;
+                   position: relative;
+                 "
+                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-phone" style="font-size: 22px;"></i>
+              </a>
+            </div>
+            
+          </div>
+
         </div>
 
       </div>
