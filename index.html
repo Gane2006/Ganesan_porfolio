@@ -17,6 +17,9 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -29,6 +32,9 @@
 
   <!-- Mobile Responsive CSS -->
   <link href="assets/css/mobile-responsive.css" rel="stylesheet">
+
+  <!-- Modern Contact CSS -->
+  <link href="assets/css/modern-contact.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Craftivo
@@ -496,82 +502,88 @@
     </section><!-- /Services Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section" style="background: #0f0f0f; min-height: 100vh; display: flex; align-items: center; padding: 80px 0;">
+      
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%;">
+        
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+          <h2 style="font-size: 3.5rem; font-weight: 700; color: #ffffff; margin-bottom: 20px; letter-spacing: -1px;">Contact</h2>
+          <p style="font-size: 1.1rem; color: #9ca3af; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+            Feel free to reach out for collaborations, project discussions, or any opportunities. I'm always open to new challenges and learning experiences.
+          </p>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Contact</span>
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations, project discussions, or any opportunities. I'm always open to new challenges and learning experiences</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Location</h3>
-                <p>Ariyalur, India</p>
-              </div>
+        <!-- Contact Information -->
+        <div style="max-width: 700px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Email -->
+          <div style="display: flex; align-items: flex-start; margin-bottom: 35px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+            <div style="flex-shrink: 0; width: 50px; height: 50px; background: rgba(255, 107, 107, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+              <i class="bi bi-envelope-fill" style="font-size: 24px; color: #ff6b6b;"></i>
             </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Contact</h3>
-                <p>+91 9787069411</p>
-              </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: #ffffff; margin-bottom: 5px;">Email</h3>
+              <a href="mailto:ganesanparkavi777@gmail.com" style="font-size: 1rem; color: #9ca3af; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b6b'" onmouseout="this.style.color='#9ca3af'">
+                ganesanparkavi777@gmail.com
+              </a>
             </div>
-
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div>
-                <h3>Email Me</h3>
-                <p>ganesanparkavi777@gmail.com</p>
-              </div>
-            </div>
-
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
+          <!-- Phone -->
+          <div style="display: flex; align-items: flex-start; margin-bottom: 35px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+            <div style="flex-shrink: 0; width: 50px; height: 50px; background: rgba(255, 107, 107, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+              <i class="bi bi-telephone-fill" style="font-size: 24px; color: #ff6b6b;"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: #ffffff; margin-bottom: 5px;">Phone</h3>
+              <a href="tel:+919787069411" style="font-size: 1rem; color: #9ca3af; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b6b'" onmouseout="this.style.color='#9ca3af'">
+                +91 9787069411
+              </a>
+            </div>
+          </div>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
+          <!-- Location -->
+          <div style="display: flex; align-items: flex-start; margin-bottom: 50px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'" onmouseout="this.style.transform='translateX(0)'">
+            <div style="flex-shrink: 0; width: 50px; height: 50px; background: rgba(255, 107, 107, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+              <i class="bi bi-geo-alt-fill" style="font-size: 24px; color: #ff6b6b;"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: #ffffff; margin-bottom: 5px;">Location</h3>
+              <p style="font-size: 1rem; color: #9ca3af; margin: 0;">Ariyalur, Tamil Nadu, India</p>
+            </div>
+          </div>
 
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
+          <!-- Divider -->
+          <div style="height: 1px; background: linear-gradient(to right, transparent, rgba(255, 107, 107, 0.3), transparent); margin: 50px 0;"></div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+          <!-- Social Connect -->
+          <div style="text-align: center;" data-aos="fade-up" data-aos-delay="200">
+            <h3 style="font-size: 1.5rem; font-weight: 600; color: #ffffff; margin-bottom: 30px;">Let's Connect!</h3>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+              
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="width: 60px; height: 60px; background: rgba(255, 107, 107, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.transform='scale(1.15) translateY(-5px)'; this.style.background='#ff6b6b'; this.style.borderColor='#ff6b6b';" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.background='rgba(255, 107, 107, 0.1)'; this.style.borderColor='transparent';">
+                <i class="bi bi-linkedin" style="font-size: 28px; color: #ff6b6b; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6b6b'"></i>
+              </a>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
+              <!-- GitHub -->
+              <a href="https://github.com/Gane2006" target="_blank" rel="noopener noreferrer" style="width: 60px; height: 60px; background: rgba(255, 107, 107, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.transform='scale(1.15) translateY(-5px)'; this.style.background='#ff6b6b'; this.style.borderColor='#ff6b6b';" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.background='rgba(255, 107, 107, 0.1)'; this.style.borderColor='transparent';">
+                <i class="bi bi-github" style="font-size: 28px; color: #ff6b6b; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6b6b'"></i>
+              </a>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              <!-- Email -->
+              <a href="mailto:ganesanparkavi777@gmail.com" style="width: 60px; height: 60px; background: rgba(255, 107, 107, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.transform='scale(1.15) translateY(-5px)'; this.style.background='#ff6b6b'; this.style.borderColor='#ff6b6b';" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.background='rgba(255, 107, 107, 0.1)'; this.style.borderColor='transparent';">
+                <i class="bi bi-envelope-fill" style="font-size: 28px; color: #ff6b6b; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6b6b'"></i>
+              </a>
 
-                  <button type="submit">Send Message</button>
-                </div>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/919787069411" target="_blank" rel="noopener noreferrer" style="width: 60px; height: 60px; background: rgba(255, 107, 107, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.transform='scale(1.15) translateY(-5px)'; this.style.background='#ff6b6b'; this.style.borderColor='#ff6b6b';" onmouseout="this.style.transform='scale(1) translateY(0)'; this.style.background='rgba(255, 107, 107, 0.1)'; this.style.borderColor='transparent';">
+                <i class="bi bi-whatsapp" style="font-size: 28px; color: #ff6b6b; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6b6b'"></i>
+              </a>
 
-              </div>
-            </form>
+            </div>
           </div>
 
         </div>

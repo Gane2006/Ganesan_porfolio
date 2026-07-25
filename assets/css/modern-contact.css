@@ -1,0 +1,83 @@
+/* Modern Contact Section Styles */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 2.5rem !important;
+  }
+  
+  #contact .contact-item {
+    margin-bottom: 25px !important;
+  }
+  
+  #contact h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  #contact p, #contact a {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact h2 {
+    font-size: 2rem !important;
+  }
+  
+  #contact {
+    padding: 60px 0 !important;
+  }
+  
+  #contact .social-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  #contact .social-icon i {
+    font-size: 24px !important;
+  }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contact [data-aos="fade-up"] {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Icon hover effects */
+.social-icon-wrapper:hover i {
+  color: #ffffff !important;
+}
+
+/* Accessibility improvements */
+a:focus-visible {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* Print styles */
+@media print {
+  #contact {
+    background: white !important;
+    color: black !important;
+  }
+  
+  #contact h2, #contact h3 {
+    color: black !important;
+  }
+  
+  #contact .social-icon {
+    display: none;
+  }
+}
