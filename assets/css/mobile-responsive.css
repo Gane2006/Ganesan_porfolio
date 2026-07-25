@@ -1,38 +1,56 @@
 /* Additional Mobile Responsive Styles */
 
+/* Hero Section - Mobile First Approach */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure no overlap on any device */
+.hero .container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Remove any conflicting styles */
+.hero-profile-image {
+  order: -1;
+  margin-bottom: 20px;
+}
+
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
-  /* Hero Section */
-  .hero .container .row {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .hero-profile-image {
-    margin-bottom: 20px !important;
-    order: -1;
-  }
-  
-  .hero-profile-image img {
-    width: 150px !important;
-    height: 150px !important;
-    margin: 0 auto;
-    display: block;
-  }
-  
   .hero h2 {
-    font-size: 1.8rem !important;
-    margin-top: 15px !important;
+    font-size: 1.75rem !important;
+    margin-top: 0 !important;
+    line-height: 1.2;
   }
   
   .hero p {
     font-size: 0.95rem !important;
+    line-height: 1.6;
   }
   
   .hero .student-status {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
     padding: 0 10px;
+    line-height: 1.5;
   }
+
+  /* Social links spacing */
+  .hero .social-links {
+    gap: 12px !important;
+  }
+
+  .hero .social-links a {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .hero .social-links i {
+    font-size: 20px !important;
+  }
+}
   
   /* Social Links */
   .social-links a {
@@ -129,38 +147,20 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-profile-image {
-    margin-bottom: 25px !important;
-  }
-  
-  .hero-profile-image img {
-    width: 170px !important;
-    height: 170px !important;
-    margin: 0 auto;
-    display: block;
-  }
-  
   .hero h2 {
     font-size: 2rem !important;
-    margin-top: 15px !important;
+  }
+  
+  .hero .social-links a {
+    width: 48px !important;
+    height: 48px !important;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .hero-profile-image {
-    margin-bottom: 25px !important;
-  }
-  
-  .hero-profile-image img {
-    width: 180px !important;
-    height: 180px !important;
-    margin: 0 auto;
-    display: block;
-  }
-  
   .hero h2 {
-    font-size: 2.2rem !important;
+    font-size: 2.25rem !important;
   }
 }
 
