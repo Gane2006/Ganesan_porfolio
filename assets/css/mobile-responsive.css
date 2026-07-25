@@ -71,14 +71,10 @@
     justify-content: center;
   }
   
-  /* Center buttons on mobile */
-  .hero .text-content > div:nth-of-type(6) {
-    justify-content: center !important;
-  }
-  
   /* Center social icons on mobile */
   .hero .text-content > div:last-child {
     justify-content: center !important;
+    margin-top: 24px !important;
   }
   
   /* Hide floating cards on mobile to reduce clutter */
