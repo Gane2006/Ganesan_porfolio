@@ -134,6 +134,18 @@
   .hero .text-content {
     text-align: left !important;
   }
+  
+  /* Move image container upward to align with heading */
+  .hero .image-content {
+    margin-top: -80px !important;
+  }
+}
+
+/* Extra large desktop - fine-tune alignment */
+@media (min-width: 1280px) {
+  .hero .image-content {
+    margin-top: -100px !important;
+  }
 }
   
   /* Social Links */
