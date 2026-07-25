@@ -42,17 +42,34 @@
     order: 1 !important;
     display: flex;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 !important;
     margin-top: 0 !important; /* Reset desktop margin */
+    margin-bottom: 24px !important;
+    position: relative !important;
+    width: 140px !important;
+    height: 140px !important;
   }
   
   .hero .image-content > div:first-child {
-    max-width: 280px !important;
+    width: 140px !important;
+    height: 140px !important;
+    max-width: 140px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
   }
   
   .hero .image-content img {
-    max-width: 280px !important;
-    height: 350px !important;
+    width: 140px !important;
+    height: 140px !important;
+    max-width: 140px !important;
+    min-width: 140px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    position: relative !important;
+    transform: none !important;
+    margin: 0 auto !important;
   }
   
   /* Text Content Second on Mobile */
