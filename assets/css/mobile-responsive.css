@@ -27,12 +27,14 @@
   }
 }
 
-/* Mobile Layout - Stack vertically */
+/* Mobile Layout - Stack vertically - RESTORED */
 @media (max-width: 767.98px) {
+  /* Force vertical stacking */
   .hero .grid {
     display: flex !important;
     flex-direction: column !important;
     gap: 32px !important;
+    align-items: center !important;
   }
   
   /* Image First on Mobile */
@@ -41,6 +43,7 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    margin-top: 0 !important; /* Reset desktop margin */
   }
   
   .hero .image-content > div:first-child {
@@ -56,10 +59,12 @@
   .hero .text-content {
     order: 2 !important;
     text-align: center !important;
+    padding: 0 20px;
   }
   
   .hero .text-content h1 {
     font-size: 2rem !important;
+    text-align: center !important;
   }
   
   .hero .text-content p {
@@ -71,13 +76,29 @@
     justify-content: center;
   }
   
+  /* Typing animation container */
+  .hero .text-content > div:nth-of-type(2) {
+    text-align: center !important;
+  }
+  
+  /* Status line */
+  .hero .text-content > p:first-of-type {
+    text-align: center !important;
+  }
+  
+  /* Description paragraph */
+  .hero .text-content > p:nth-of-type(2) {
+    text-align: center !important;
+    margin-bottom: 24px !important;
+  }
+  
   /* Center social icons on mobile */
   .hero .text-content > div:last-child {
     justify-content: center !important;
-    margin-top: 24px !important;
+    margin-top: 0 !important;
   }
   
-  /* Hide floating cards on mobile to reduce clutter */
+  /* Hide floating cards on mobile (already using Tailwind hidden md:block) */
   .hero .floating-card {
     display: none !important;
   }
