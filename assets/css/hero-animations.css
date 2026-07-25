@@ -1,0 +1,78 @@
+/* Hero Section Animations */
+
+/* Slide in from left animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right animation */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Floating animation for cards */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Button hover effects */
+.hero-btn-primary:hover {
+  background: #ff4545 !important;
+  box-shadow: 0 8px 30px rgba(255, 94, 94, 0.5) !important;
+  transform: translateY(-2px);
+}
+
+.hero-btn-secondary:hover {
+  background: #ff5e5e !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 30px rgba(255, 94, 94, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+/* Social icon hover effects */
+.social-icon:hover {
+  background: #ff5e5e !important;
+  color: #ffffff !important;
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 94, 94, 0.4) !important;
+}
+
+/* Floating card hover effects */
+.floating-card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply fade in to hero section */
+.hero.section {
+  animation: fadeIn 0.6s ease-in;
+}

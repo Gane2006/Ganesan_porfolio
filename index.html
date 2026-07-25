@@ -33,6 +33,9 @@
   <!-- Mobile Responsive CSS -->
   <link href="assets/css/mobile-responsive.css" rel="stylesheet">
 
+  <!-- Hero Animations CSS -->
+  <link href="assets/css/hero-animations.css" rel="stylesheet">
+
   <!-- Modern Contact CSS -->
   <link href="assets/css/modern-contact.css" rel="stylesheet">
 
@@ -75,96 +78,126 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 60px 20px;">
+    <section id="hero" class="hero section" style="background: linear-gradient(135deg, #0F1720 0%, #111827 100%); min-height: 100vh; display: flex; align-items: center; padding: 80px 20px; position: relative; overflow: hidden;">
+      
+      <!-- Animated Background Elements -->
+      <div style="position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255, 94, 94, 0.1) 0%, transparent 70%); top: -200px; right: -200px; border-radius: 50%; filter: blur(80px);"></div>
+      <div style="position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 94, 94, 0.08) 0%, transparent 70%); bottom: -150px; left: -150px; border-radius: 50%; filter: blur(80px);"></div>
 
-      <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="container" style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 10;">
         
-        <!-- Flex Container -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16" data-aos="fade-up" data-aos-delay="100">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
-          <!-- Profile Image Container -->
-          <div class="relative mb-8 md:mb-0 mx-auto md:mx-0 flex-shrink-0" data-aos="zoom-in" data-aos-delay="200">
-            <img 
-              src="assets/img/person/IMG_35631120212479.jpg" 
-              alt="GANESAN K Profile Photo"
-              id="hero-profile-image"
-              class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full object-cover flex-shrink-0"
-              style="
-                object-position: center !important;
-                border: 5px solid #ff4d4f !important;
-                box-shadow: 0 15px 40px rgba(255, 77, 79, 0.4) !important;
-                display: block !important;
-                position: relative !important;
-              ">
-          </div>
-
-          <!-- Text Content Container -->
-          <div class="text-center md:text-left w-full md:flex-1 mt-0">
+          <!-- LEFT SIDE - Text Content -->
+          <div class="text-content" data-aos="fade-right" data-aos-delay="100" style="animation: slideInLeft 0.8s ease-out;">
             
-            <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6" style="
-              color: #ffffff; 
-              margin-top: 0;
-              line-height: 1.2;
-            ">
-              Hi, I'm GANESAN K
-            </h2>
+            <!-- Greeting -->
+            <div style="margin-bottom: 20px;">
+              <span style="font-size: 1.5rem; color: #9ca3af; font-weight: 500;">👋 Hi, I'm</span>
+            </div>
             
-            <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl mb-4 md:mb-6" style="
-              color: #d9d9d9; 
-              margin-top: 0;
-            ">
-              I'm a <span class="typed" data-typed-items="CSE Student, Web Developer, Full-Stack Developer, AI Enthusiast"></span><span class="typed-cursor" aria-hidden="true"></span>
-            </p>
+            <!-- Name -->
+            <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 24px; color: #ffffff;">
+              <span style="color: #ff5e5e; text-shadow: 0 0 30px rgba(255, 94, 94, 0.5);">GANESAN K</span>
+            </h1>
             
-            <p class="student-status text-sm sm:text-base md:text-base lg:text-lg px-4 md:px-0 mb-6 md:mb-8" style="
-              color: #ff4d4f; 
-              margin-top: 0;
-            ">
+            <!-- Typing Animation -->
+            <div style="margin-bottom: 24px; min-height: 40px;">
+              <span style="font-size: 1.25rem; color: #d1d5db; font-weight: 500;">
+                <span class="typed" data-typed-items="AI Enthusiast, Web Developer, Full-Stack Developer, CSE Student"></span><span class="typed-cursor" aria-hidden="true"></span>
+              </span>
+            </div>
+            
+            <!-- Status -->
+            <p style="font-size: 1rem; color: #ff5e5e; margin-bottom: 24px; font-weight: 500;">
               🎓 B.Tech CSE Student | Actively Seeking Internship & Job Opportunities
             </p>
             
-            <!-- Social Links -->
-            <div class="social-links flex justify-center md:justify-start gap-4 flex-wrap">
-              <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" 
-                 target="_blank" 
-                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
-                 style="
-                   background: rgba(255, 77, 79, 0.1); 
-                   color: #ff4d4f; 
-                   text-decoration: none;
-                 "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-linkedin text-xl md:text-2xl"></i>
+            <!-- Description -->
+            <p style="font-size: 1.1rem; color: #9ca3af; line-height: 1.8; margin-bottom: 32px; max-width: 600px;">
+              I build modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, React, and AI-powered tools. I enjoy solving real-world problems and continuously learning new technologies.
+            </p>
+            
+            <!-- Buttons -->
+            <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+              <a href="#services" class="hero-btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: #ff5e5e; color: #ffffff; border-radius: 12px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(255, 94, 94, 0.3);">
+                <span>View My Projects</span>
+                <i class="bi bi-arrow-right"></i>
               </a>
-              <a href="mailto:ganesanparkavi777@gmail.com" 
-                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
-                 style="
-                   background: rgba(255, 77, 79, 0.1); 
-                   color: #ff4d4f; 
-                   text-decoration: none;
-                 "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-envelope text-xl md:text-2xl"></i>
+              <a href="#contact" class="hero-btn-secondary" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: rgba(255, 94, 94, 0.1); color: #ff5e5e; border: 2px solid #ff5e5e; border-radius: 12px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
+                <span>Contact Me</span>
+                <i class="bi bi-envelope"></i>
               </a>
-              <a href="tel:+919787069411" 
-                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
-                 style="
-                   background: rgba(255, 77, 79, 0.1); 
-                   color: #ff4d4f; 
-                   text-decoration: none;
-                 "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-phone text-xl md:text-2xl"></i>
+            </div>
+            
+            <!-- Social Icons -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(255, 94, 94, 0.1); border: 1px solid rgba(255, 94, 94, 0.3); border-radius: 50%; color: #ff5e5e; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);">
+                <i class="bi bi-linkedin" style="font-size: 20px;"></i>
+              </a>
+              <a href="https://github.com/Gane2006" target="_blank" class="social-icon" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(255, 94, 94, 0.1); border: 1px solid rgba(255, 94, 94, 0.3); border-radius: 50%; color: #ff5e5e; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);">
+                <i class="bi bi-github" style="font-size: 20px;"></i>
+              </a>
+              <a href="mailto:ganesanparkavi777@gmail.com" class="social-icon" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(255, 94, 94, 0.1); border: 1px solid rgba(255, 94, 94, 0.3); border-radius: 50%; color: #ff5e5e; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);">
+                <i class="bi bi-envelope-fill" style="font-size: 20px;"></i>
+              </a>
+              <a href="https://leetcode.com/u/ganesanparkavi777/" target="_blank" class="social-icon" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(255, 94, 94, 0.1); border: 1px solid rgba(255, 94, 94, 0.3); border-radius: 50%; color: #ff5e5e; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);">
+                <i class="bi bi-code-slash" style="font-size: 20px;"></i>
               </a>
             </div>
             
           </div>
-
+          
+          <!-- RIGHT SIDE - Profile Image with Floating Cards -->
+          <div class="image-content" data-aos="fade-left" data-aos-delay="200" style="position: relative; animation: slideInRight 0.8s ease-out;">
+            
+            <!-- Profile Image Container -->
+            <div style="position: relative; z-index: 5;">
+              <div style="background: linear-gradient(135deg, rgba(255, 94, 94, 0.1) 0%, rgba(255, 94, 94, 0.05) 100%); padding: 8px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);">
+                <img 
+                  src="assets/img/person/IMG_35631120212479.jpg" 
+                  alt="GANESAN K"
+                  style="width: 100%; max-width: 420px; height: 500px; object-fit: cover; border-radius: 20px; display: block; box-shadow: 0 10px 40px rgba(255, 94, 94, 0.2);">
+              </div>
+            </div>
+            
+            <!-- Floating Card - Top Right -->
+            <div class="floating-card" style="position: absolute; top: 40px; right: -30px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 24px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); animation: float 3s ease-in-out infinite; z-index: 10;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 48px; height: 48px; background: rgba(255, 94, 94, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;">💻</div>
+                <div>
+                  <div style="font-size: 0.875rem; color: #9ca3af; margin-bottom: 2px;">Specialized in</div>
+                  <div style="font-size: 1rem; color: #ffffff; font-weight: 600;">Web Development</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Floating Card - Middle Left -->
+            <div class="floating-card" style="position: absolute; top: 200px; left: -40px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 24px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); animation: float 3s ease-in-out infinite 1s; z-index: 10;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 48px; height: 48px; background: rgba(255, 94, 94, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🤖</div>
+                <div>
+                  <div style="font-size: 0.875rem; color: #9ca3af; margin-bottom: 2px;">Passionate about</div>
+                  <div style="font-size: 1rem; color: #ffffff; font-weight: 600;">AI Projects</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Floating Card - Bottom Right -->
+            <div class="floating-card" style="position: absolute; bottom: 60px; right: -20px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 24px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); animation: float 3s ease-in-out infinite 2s; z-index: 10;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 48px; height: 48px; background: rgba(255, 94, 94, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🎨</div>
+                <div>
+                  <div style="font-size: 0.875rem; color: #9ca3af; margin-bottom: 2px;">Creative in</div>
+                  <div style="font-size: 1rem; color: #ffffff; font-weight: 600;">UI/UX Design</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
         </div>
-
+        
       </div>
 
     </section><!-- /Hero Section -->
