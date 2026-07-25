@@ -50,12 +50,16 @@
     height: 140px !important;
   }
   
+  /* Remove the wrapper background on mobile */
   .hero .image-content > div:first-child {
     width: 140px !important;
     height: 140px !important;
     max-width: 140px !important;
     padding: 0 !important;
     border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
   }
   
   .hero .image-content img {
@@ -70,6 +74,8 @@
     position: relative !important;
     transform: none !important;
     margin: 0 auto !important;
+    border: 3px solid #ff5e5e !important;
+    box-shadow: 0 0 20px rgba(255, 94, 94, 0.4) !important;
   }
   
   /* Text Content Second on Mobile */
