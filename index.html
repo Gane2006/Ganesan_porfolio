@@ -80,119 +80,84 @@
       <div class="container" style="max-width: 1200px; margin: 0 auto;">
         
         <!-- Flex Container -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16" data-aos="fade-up" data-aos-delay="100">
           
           <!-- Profile Image Container -->
-          <div class="relative mb-8 md:mb-0 mx-auto flex-shrink-0" data-aos="zoom-in" data-aos-delay="200" style="order: -1;">
+          <div class="relative mb-8 md:mb-0 mx-auto md:mx-0 flex-shrink-0" data-aos="zoom-in" data-aos-delay="200">
             <img 
               src="assets/img/person/IMG_35631120212479.jpg" 
               alt="GANESAN K Profile Photo"
               id="hero-profile-image"
-              class="flex-shrink-0"
+              class="w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full object-cover flex-shrink-0"
               style="
-                width: 140px !important;
-                height: 140px !important;
-                border-radius: 50% !important;
-                object-fit: cover !important;
                 object-position: center !important;
                 border: 5px solid #ff4d4f !important;
                 box-shadow: 0 15px 40px rgba(255, 77, 79, 0.4) !important;
                 display: block !important;
-                margin: 0 auto !important;
                 position: relative !important;
-                z-index: 1 !important;
               ">
           </div>
 
           <!-- Text Content Container -->
-          <div class="text-center md:text-left w-full mt-0" style="position: relative; z-index: 2;">
+          <div class="text-center md:text-left w-full md:flex-1 mt-0">
             
-            <h2 style="
-              font-size: 2rem; 
-              font-weight: 700; 
+            <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6" style="
               color: #ffffff; 
-              margin-bottom: 16px; 
               margin-top: 0;
               line-height: 1.2;
-            " class="md:text-5xl">
+            ">
               Hi, I'm GANESAN K
             </h2>
             
-            <p style="
-              font-size: 1.1rem; 
+            <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl mb-4 md:mb-6" style="
               color: #d9d9d9; 
-              margin-bottom: 16px;
               margin-top: 0;
-            " class="md:text-2xl">
+            ">
               I'm a <span class="typed" data-typed-items="CSE Student, Web Developer, Full-Stack Developer, AI Enthusiast"></span><span class="typed-cursor" aria-hidden="true"></span>
             </p>
             
-            <p class="student-status" style="
-              font-size: 0.9rem; 
+            <p class="student-status text-sm sm:text-base md:text-base lg:text-lg px-4 md:px-0 mb-6 md:mb-8" style="
               color: #ff4d4f; 
-              margin-bottom: 24px;
               margin-top: 0;
-              padding: 0 10px;
-            " class="md:text-base md:px-0">
+            ">
               🎓 B.Tech CSE Student | Actively Seeking Internship & Job Opportunities
             </p>
             
             <!-- Social Links -->
-            <div class="social-links flex justify-center md:justify-start gap-4 flex-wrap" style="margin-top: 24px;">
+            <div class="social-links flex justify-center md:justify-start gap-4 flex-wrap">
               <a href="https://www.linkedin.com/in/ganesan-k-b933692a0?utm_source=share&utm_content=profile&utm_medium=member_android" 
                  target="_blank" 
+                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
                  style="
-                   width: 48px; 
-                   height: 48px; 
-                   display: flex; 
-                   align-items: center; 
-                   justify-content: center; 
-                   border-radius: 50%; 
                    background: rgba(255, 77, 79, 0.1); 
                    color: #ff4d4f; 
-                   text-decoration: none; 
-                   transition: all 0.3s ease;
-                   position: relative;
+                   text-decoration: none;
                  "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-linkedin" style="font-size: 22px;"></i>
+                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-linkedin text-xl md:text-2xl"></i>
               </a>
               <a href="mailto:ganesanparkavi777@gmail.com" 
+                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
                  style="
-                   width: 48px; 
-                   height: 48px; 
-                   display: flex; 
-                   align-items: center; 
-                   justify-content: center; 
-                   border-radius: 50%; 
                    background: rgba(255, 77, 79, 0.1); 
                    color: #ff4d4f; 
-                   text-decoration: none; 
-                   transition: all 0.3s ease;
-                   position: relative;
+                   text-decoration: none;
                  "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-envelope" style="font-size: 22px;"></i>
+                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-envelope text-xl md:text-2xl"></i>
               </a>
               <a href="tel:+919787069411" 
+                 class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full transition-all duration-300"
                  style="
-                   width: 48px; 
-                   height: 48px; 
-                   display: flex; 
-                   align-items: center; 
-                   justify-content: center; 
-                   border-radius: 50%; 
                    background: rgba(255, 77, 79, 0.1); 
                    color: #ff4d4f; 
-                   text-decoration: none; 
-                   transition: all 0.3s ease;
-                   position: relative;
+                   text-decoration: none;
                  "
-                 onmouseover="this.style.background='#ff4d4f'; this.style.transform='scale(1.1) translateY(-3px)';"
-                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.transform='scale(1) translateY(0)';">
-                <i class="bi bi-phone" style="font-size: 22px;"></i>
+                 onmouseover="this.style.background='#ff4d4f'; this.style.color='#ffffff'; this.style.transform='scale(1.1) translateY(-3px)';"
+                 onmouseout="this.style.background='rgba(255, 77, 79, 0.1)'; this.style.color='#ff4d4f'; this.style.transform='scale(1) translateY(0)';">
+                <i class="bi bi-phone text-xl md:text-2xl"></i>
               </a>
             </div>
             

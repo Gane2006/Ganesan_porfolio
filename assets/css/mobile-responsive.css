@@ -1,42 +1,28 @@
 /* Hero Section Responsive Styles - Mobile First */
 
-/* Remove any absolute positioning or transforms that cause overlap */
-#hero * {
-  position: relative !important;
-}
-
-#hero img {
+/* Remove any conflicting styles */
+#hero-profile-image {
   position: relative !important;
   transform: none !important;
 }
 
-/* Base mobile size */
-#hero-profile-image {
-  width: 140px !important;
-  height: 140px !important;
-  margin-bottom: 32px !important;
-}
-
-/* Ensure proper stacking on mobile */
+/* Mobile stays exactly the same - DO NOT CHANGE */
 @media (max-width: 767.98px) {
   #hero .flex {
     flex-direction: column !important;
   }
   
   #hero h2 {
-    font-size: 2rem !important;
     text-align: center !important;
     margin-top: 0 !important;
   }
   
   #hero p {
-    font-size: 1.1rem !important;
     text-align: center !important;
     margin-top: 0 !important;
   }
   
   .student-status {
-    font-size: 0.9rem !important;
     text-align: center !important;
   }
   
@@ -45,33 +31,13 @@
   }
 }
 
-/* Small devices and above */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #hero-profile-image {
-    width: 160px !important;
-    height: 160px !important;
-  }
-  
+/* Tablet - slightly larger */
+@media (min-width: 768px) and (max-width: 1023.98px) {
   #hero h2 {
-    font-size: 2.25rem !important;
-  }
-}
-
-/* Medium devices - Desktop layout starts */
-@media (min-width: 768px) {
-  #hero-profile-image {
-    width: 200px !important;
-    height: 200px !important;
-    margin-bottom: 0 !important;
-  }
-  
-  #hero h2 {
-    font-size: 3rem !important;
     text-align: left !important;
   }
   
   #hero p {
-    font-size: 1.5rem !important;
     text-align: left !important;
   }
   
@@ -84,19 +50,16 @@
   }
 }
 
-/* Large devices */
-@media (min-width: 992px) {
-  #hero-profile-image {
-    width: 220px !important;
-    height: 220px !important;
+/* Desktop - larger image and text */
+@media (min-width: 1024px) {
+  /* Larger spacing between image and text */
+  #hero .flex {
+    gap: 4rem !important; /* 64px */
   }
   
-  #hero h2 {
-    font-size: 3.5rem !important;
-  }
-  
-  #hero p {
-    font-size: 1.75rem !important;
+  /* Ensure proper alignment */
+  #hero {
+    align-items: center !important;
   }
 }
   
